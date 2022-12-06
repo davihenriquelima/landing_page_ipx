@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'azonix';
+    src: url('../fontes/azonix/Azonix.otf');
+}
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0,0,0,0.7)), url(../imagens/vector-jan-2021-19_generated.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header {
+    background-color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerlogo {
+    align-items: center;
+    height: 51.39px;
+    margin-left: 20px;
+}
+header img {
+    width: 160px;
+    position: relative;
+}
+
+.menuprincipal {
+    position: relative;
+    margin-right:20px;
+    height: 90px;
+    display: flex;
+}
+.menuprincipal a {
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.menuprincipal a:hover {
+    transition: 0.8s;
+    transition-timing-function: ease;
+    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.412);
+    border-radius: 5px;
+}
+.menuprincipal img {
+    width: 25px;
+}
+.menudesktop {
+    display: flex;
+    padding-bottom: 16px;
+    align-items: flex-end;
+}
+.menumobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+}
+.mmline {
+    margin-bottom: 2px;
+    height: 2px;
+    width: 17px;
+    background-color: blueviolet;
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+button:hover .mmline {
+    background-color: rgb(255, 1, 255);
+}
+#ajuda {
+    border-left: 1px solid rgba(58, 58, 58, 0.724);
+    padding-left: 15px;
+    align-self: flex-end;
+}
+#ajuda:hover {
+    border-left: 0;
+    transition: 1s;
+}
+main {
+    color: white;
+    padding: 20px;
+}
+.headerficha {
+    min-height: 100px;
+    max-width: 96vw;
+    display: flex;
+}
+.fichamobile {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+.titulofichamobile {
+    color: white;
+}
+.fichahamburg {
+    margin: 0px 10px;
+}
+.mmlineficha {
+    background-color: aliceblue;
+    height: 2px;
+    margin:5px 0px;
+    width: 16px;
+}
+.fichatecnica {
+    height: 40px;
+    z-index: 8;
+}
+.fichatecnica ul {
+    font-size: 12px;
+    list-style: none;
+    padding-left: 0;
+}
+.ficha {
+    display: flex;
+}
+.fichaitem:hover {
+    background-color: rgba(137, 43, 226, 0.859);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.fichaitem:hover .fichainfo {
+    visibility: visible;
+    animation: fadein 0.5s;
+}
+.ficha li {
+    list-style: none;
+    padding: 5px 10px 5px 5px;
+}
+.fichainfo {
+    position: absolute;
+    visibility: hidden;
+    min-width: 150px;
+}
+.fichainfo li {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 10px;
+    margin-left: -20px;
+}
+.landing {
+    max-width: 1150px;
+    margin: auto;
+}
+.tituloproduto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family:'azonix';
+}
+.iphonex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.iphone2 {
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.imgiphone {
+    max-width: 377px;
+    display: flex;
+}
+.imgiphone img {
+    width: 377px;
+    height: 780px;
+    object-fit: cover;
+    object-position: center;
+}
+.iphone1  {
+    width: 100%;
+    display: flex;
+}
+.imgiphonex {
+    justify-content: center;
+    width: 274px;
+    height: 552px;
+}
+.imgiphonex img {
+    width: 274px;
+    height: 552px;
+    object-fit: cover;
+    object-position: center;
+}
+.dadosiphone {
+    font-family: 'azonix';
+    text-transform: uppercase;
+    
+    display: flex;
+    flex-direction: column;
+}
+.itemdados {
+    margin: 20px;
+}
+.titledados {
+    font-size:50px;
+    color: rgb(156, 141, 194);
+}
+.dadostec {
+    font-size: 70px;
+}
+.buttoncarrinho {
+    width: 100%;
+    display: flex;
+}
+.addcarrinho {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.713), 
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.815),      
+     0.5px 0.5px 0px rgba(0, 0, 0, 0.793),    
+     0.5px 0px 0px rgba(0, 0, 0, 0.689);
+    background-image: linear-gradient(45deg, #079100, #1f7a00);
+    padding: 10px;
+    border: 2px solid rgb(43, 43, 43);
+    border-radius: 7px;
+    position: relative;
+    left: 40px;
+    bottom: 170px;
+    width: 170px;
+    z-index: 10;
+    cursor: pointer;
+    text-align: center;
+}
+footer  {
+    background-color: white;
+    min-height: 90px;
+}
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 10px;
+    z-index: 14;
+}
+.copy {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.textcopy {
+    color: #e99bff;
+}
+.criador {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.textdavi {
+    font-family: 'azonix';
+}
+.redes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0px;
+}
+.redes img {
+    width: 40px;
+}
+.redesimg {
+    margin: 0px 5px;
+    height: 40px;
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+@media (max-width:1221px){
+    .iphone2 {
+        width: 50%;
+    }
+}
+@media (max-width:1005px) {
+    .headerficha {
+        display: flex;
+        max-width: 180px;
+        height: 280px;
+        flex-direction: column;
+        position: absolute;
+    }
+    .ficha {
+        flex-direction: column;
+
+    }
+    .fichaitem {
+        display: flex;
+    }
+    .fichainfo {
+       left: 143px;
+    }
+    .iphonex {
+        flex-direction: column-reverse;
+    }
+    .iphone1 {
+        justify-content: center;
+    }
+    .iphone2 {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .imgiphone img {
+        width: 400px;
+        height: 630px;
+    }
+    .dadosiphone {
+        width: 70%;
+    }
+    #rightdados {
+        text-align: right;
+    }
+    #leftdados {
+       text-align: start;
+    }
+    .itemdados {
+        display: flex;
+        flex-direction: column;
+    }
+    .titledados {
+        font-size:20px;
+        color: rgb(156, 141, 194);
+    }
+    .dadostec {
+        font-size: 40px;
+    }
+}
+@media (max-width:860px){
+    .tituloproduto {
+        text-align: right;
+        justify-content: flex-end;
+    }
+}
+@media (max-width:750px) {
+    .body {
+        overflow: hidden;
+    }
+    .menudesktop {
+        display: none;
+        width: 100vw;
+        position: absolute;
+        right: 0;
+        top:90px;
+        background-color: darkgray;
+        padding: 10px;
+        z-index: 9;
+    }
+    .menuprincipal {
+        margin-right: 0;
+    }
+    .menuprincipal nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menuprincipal nav a {
+        padding: 6px 0px;
+    }
+    .menudesktop nav a:hover {
+        color: blueviolet;
+    }
+    .menumobile {
+        display: flex;
+        flex-direction: column;
+    }
+    #ajuda {
+        align-self: center;
+        border-top: 1px;
+        border-left: 0;
+    }
+    .aberto {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        transition-duration: 1s;
+    }
+    .fichamobile {
+        display: flex;
+    }
+    .fichatecnica {
+        display: none;
+    }
+    .imgiphone img {
+        width: 377px;
+        height: 580px;
+    }
+    .open {
+        display: flex;
+    }
+}
+@media (max-width:560px) {
+   .fichaitem {
+        background-color: rgba(0, 0, 0, 0.881);
+   }
+   .tituloproduto h2 {
+        font-size: 16px;
+   }
+}
+@media (max-width:474px) {
+    .tituloproduto h1 {
+        font-size: 26px;
+    }
+    .tituloproduto h2 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:380px) {
+    .menumobile {
+        width: 20px;
+        margin: 0px 10px;
+    }
+    .landing {
+        margin-top: 80px;
+    }
+    .tituloproduto {
+        justify-content: center;
+        text-align: center;
+    }
+    .tituloproduto h1 {
+        font-size: 30px;
+    }
+    .iphone1 {
+        width: 100%;
+        justify-content: center;
+    }
+    .imgiphonex {
+        width: 222px;
+        height: 445px;
+    }
+    .iphonex img {
+        width: 222px;
+        height: 427px;
+        object-fit:cover;
+    }
+    .itemdados {
+        margin: 0;
+    }
+    .dadosiphone{
+        margin-bottom: 20px;
+    }
+    .titledados {
+        margin: 12px 0px 5px 0px;
+    }
+    .dadostec {
+        font-size: 24px;
+    }
+    .addcarrinho {
+        left: 27px;
+        font-size: 14px;
+        width: 145px;
+    }
+}
+@media (max-width:340px) {
+    .fichainfo {
+        width: max-content;
+        left: 0px;
+        top: 254px;
+    }
+    .fichainfo li {
+        margin-left: 2px;
+    }
+}
+@media (max-width:230px){
+    body {
+        overflow-x: scroll;
+    }
+}

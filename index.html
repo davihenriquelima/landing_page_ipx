@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Iphone X</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="headerlogo">
+            <img src="imagens/logoloja.png" alt="">
+        </div>
+        <div class="menuprincipal">
+            <div class="menumobile">
+                <button onclick="visibleMenu()">
+                    <div class="icon">
+                        <div class="hamburg">
+                            <div class="mmline"></div>
+                            <div class="mmline"></div>
+                            <div class="mmline"></div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="menudesktop">
+                <nav>
+                    <a href="">INICIO</a>
+                    <a href="">MINHA CONTA</a>
+                    <a href="">CARRINHO<img src="imagens/carrinho.png" alt=""></a>
+                    <a href="" id="ajuda" style="color: rgb(87, 87, 87); ;">AJUDA<img src="imagens/atendimento.png"
+                            alt=""></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="headerficha">
+            <div class="fichamobile" onclick="fichaShow()">
+                <div id="titulofichamobile">Ficha Técnica</div>
+                <div class="fichahamburg">
+                    <div class="mmlineficha"></div>
+                    <div class="mmlineficha"></div>
+                    <div class="mmlineficha"></div>
+                </div>
+            </div>
+            <div class="fichatecnica">
+                <ul class="ficha">
+                    <li class="fichaitem">REDE
+                        <ul class="fichainfo">
+                            <li>Nano SIM</li>
+                            <li>Gsm Quad Band (850/900/1800/1900)</li>
+                            <li>HSPA+</li>
+                            <li>LTE</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">DADOS TÉCNICOS
+                        <ul class="fichainfo">
+                            <li>Processador 2x Monsoon</li>
+                            <li>Chipset Apple A11 Bionic</li>
+                            <li>64 Bit</li>
+                            <li>GPU Apple M11</li>
+                            <li>RAM 3GB</li>
+                            <li>Mémoria Interna 256GB</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">TELA
+                        <ul class="fichainfo">
+                            <li>5.8 Polegadas</li>
+                            <li>Resolução 1125x2436 pixel</li>
+                            <li>Densidade de Pixels 458 ppi</li>
+                            <li>OLED</li>
+                            <li>FPS 60HZ</li>
+                            <li>Proteção Scratch-resistant glass</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">CÂMERA
+                        <ul class="fichainfo">
+                            <li>12 Mp + 12 Mp</li>
+                            <li>Resolução 4608 x 2592 pixel</li>
+                            <li>Sensor 1/3 " + 1/3.4 "</li>
+                            <li>Aperture Size F 1.8 + F 2.4</li>
+                            <li>Estabilização Ótica</li>
+                            <li>Ângulo máximo 75°</li>
+                            <li>Zoom Ótico</li>
+                            <li>Autofoco</li>
+                            <li>Foco por toque</li>
+                            <li>Flash Quad LED</li>
+                            <li>HDR</li>
+                            <li>Localização</li>
+                            <li>Detecção facial</li>
+                            <li>Detecção de sorriso</li>
+                            <li>Câmera Frontal 7MP F 2.2</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">VÍDEO
+                        <ul class="fichainfo">
+                            <li>Resolução da gravação 4K (2160p)</li>
+                            <li>Auto focagem de vídeo</li>
+                            <li>FPS da gravação 60 fps</li>
+                            <li>Estabilização de vídeo</li>
+                            <li>Slow Motion 240 fps</li>
+                            <li>Dual Rec</li>
+                            <li>Foto em Vídeo</li>
+                            <li>Vídeo Câmera Frontal Full HD, 30fps</li>
+                            <li>Câmera Frontal HDR/Face Detection/Modo Selfie</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">CONECTIVIDADE
+                        <ul class="fichainfo">
+                            <li>Wi-Fi 802.11 a/b/g/n/ac</li>
+                            <li>Bluetooth 5.0 com A2DP/LE</li>
+                            <li>USB 3.0</li>
+                            <li>NFC</li>
+                            <li>GPS A-GPS/GLONASS/Galileo</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">SENSORES
+                        <ul class="fichainfo">
+                            <li>Acelerômetro</li>
+                            <li>Proximidade</li>
+                            <li>Giroscópio</li>
+                            <li>Bússola</li>
+                            <li>Barômetro</li>
+                            <li>Mic. de Redução de Ruído</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">BATERIA
+                        <ul class="fichainfo">
+                            <li>Litio</li>
+                            <li>2716 mAh</li>
+                        </ul>
+                    </li>
+                    <li class="fichaitem">SAR
+                        <ul class="fichainfo">
+                            <li>SAR US Head 1.09 W/kg Body 1.17 W/kg</li>
+                            <li>SAR EU Head 0.87 W/kg Body 0.97 W/kg</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="landing">
+            <div class="tituloproduto">
+                <div>
+                    <h1>IPHONE X</h1>
+                    <h2>Diga oi para o futuro</h2>
+                </div>
+            </div>
+            <div class="iphonex">
+                <div class="dadosiphone" id="rightdados">
+                    <div class="itemdados">
+                        <div class="titledados">Rede</div>
+                        <div class="dadostec">LTE 4G</div>
+                        <div class="dadostec">6 Core</div>
+                        <div class="dadostec">2.1 GHZ</div>
+                    </div>
+                    <div class="itemdados">
+                        <div class="titledados">Memória</div>
+                        <div class="dadostec">256 GB</div>
+                    </div>
+                </div>
+                <div class="iphone2">
+                    <div class="imgiphone">
+                        <img src="imagens/iphonex.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="iphonex">
+                <div class="iphone1">
+                    <div class="imgiphonex">
+                        <img src="imagens/celular.png" alt="">
+                        
+                            <div class="buttoncarrinho">
+                                <div class="addcarrinho">Adicionar ao Carrinho</div>
+                            </div>
+    
+                    </div>
+                    
+                </div>
+                <div class="dadosiphone" id="leftdados">
+                    <div class="itemdados">
+                        <div class="titledados">Display</div>
+                        <div class="dadostec">5.8 pol</div>
+                        <div class="dadostec">2436x1125 pixel</div>
+                    </div>
+                    <div class="itemdados">
+                        <div class="titledados">Foto</div>
+                        <div class="dadostec">12 Mpx</div>
+                    </div>
+                    <div class="itemdados">
+                        <div class="titledados">Video</div>
+                        <div class="dadostec">4K</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="copy">
+                <div class="textcopy">Smart Shoppen 2022. Todos os direitos reservados.</div>
+            </div>
+            <div class="criador">
+                <div class="textdavi">By Davi Lima</div>
+            </div>
+            <div class="redes">
+                <div class="redesimg"><a href="https://github.com/davihenriquelima" target="_blank"><img src="imagens/github.png" alt=""></a></div>
+                <div class="redesimg"><a href="#" target="_blank"><img src="imagens/logotipo-do-instagram.png" alt=""></a></div>
+                <div class="redesimg"><a href="#"><img src="imagens/facebook.png" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
